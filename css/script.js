@@ -1,9 +1,11 @@
 function akan(){
+
+    var century = parseInt(document.getElementById("century").value);
     var year = parseInt(document.getElementById("year").value);
     var month = parseInt(document.getElementById("month").value);
     var date = parseInt(document.getElementById("date").value);
-    var male = document.getElementById("male").value;
-    var female = document.getElementById("female").value;
+    var male = document.getElementById("Male").value;
+    var female = document.getElementById("Female").value;
 
 
     var maleNames = [
@@ -17,33 +19,32 @@ function akan(){
       ];
       var femaleNames = [
         "Akosua",
-         " Adwoa",
+        " Adwoa",
         "Abenaa",
         "Akua",
         "Yaa",
         "Afua",
         "Ama"
       ];
-      var B = new Date(month+'/'+date+'/'+year);
-      var akanday = B.getDay()
-  console.log(akanday);
-  if (akanday == 0)
+    
+      var  akanDay = parseInt( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date )%7;
+  if (akanDay == 0)
   {
       Day = "Sunday";
   }
-  else if (akanday == 1)
+  else if (akanDay == 1)
   {
       Day = "Monday";
   }
-  else if (akanday == 2)
+  else if (akanDay == 2)
   {
       Day = "Tuesday";
   }
-  else if (akanday == 3)
+  else if (akanDay == 3)
   {
       Day = "Wednesday";
   }
-  else if (akanday == 4)
+  else if (akanDay == 4)
   {
       Day = "Thursday";
   }
@@ -51,18 +52,18 @@ function akan(){
   {
       Day = "Friday";
   }
-  else if (akanday == 6)
+  else 
   {
       Day = "Saturday";
   }
 
-  if(date<0 || date>31){
+  if (date<0 || date>31){
     alert("Please Enter a valid day")
   }
-  if(month<0 || month>12){
+  if (month<0 || month>12){
     alert("Please Enter a valid Month")
   }
-  if(year<1900 || year>2022){
+  if (year<1900 || year>2022){
       alert("Is that really your age?")
   }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="css/js/bootstrap.js"></script>
-    <script src="css/script.js"></script>
+   
 </head>
 <body>
         <div class="container">
@@ -81,6 +81,9 @@
                             
                         </legend>
                         <ul>
+                            <li><label for="century ">The Century</label></li>
+                        <input type="number" id="century" name="century" required placeholder="e.g: 19 for 1989">
+
                         <li><label for="year ">Year of birth</label></li>
                         <input type="number" id="year" name="year" required placeholder="e.g: 1989">
 
@@ -102,7 +105,7 @@
                         </label>
                         </div>
                         </ul>
-                        <input type="submit" value="Submit">
+                        <input type="submit" id="marker" name="submit" onclick="akan()">
                     </form>
                 </div>
                 
@@ -111,6 +114,6 @@
     </div>
     
      
-    
+    <script src="../akan-names/css/script.js"></script>
 </body>
 </html>
