@@ -1,3 +1,7 @@
-body .container .jumbotron {
-   background-color: #e5e5e5;
+body {
+ background-color: grey;
+}
+
+body .card {
+    background-color: #6d928b;
 }
