@@ -18,13 +18,13 @@ var femaleNames = [
         "Kwame"
 ];
 var dayOfTheWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday', 
-    'Wednesday', 
-    'Thursday', 
-    'Friday', 
-    'Saturday'
+    "Sunday",
+    "Monday",
+    "Tuesday", 
+    "Wednesday", 
+    "Thursday", 
+    "Friday", 
+    "Saturday"
 ];
 
 
@@ -36,13 +36,13 @@ function calculate(){
     
     
     var date = new Date(year + "/" + month + "/" + day);
-    var big = date.getDay(); 
+    var d = date.getDay(); 
 
     
 if (gender === "female") {
-    alert("Your name is: " + femaleNames[big] + "and you were born on " + dayOfTheWeek[big])
+    alert("Your name is: " + femaleNames[d] + "and you were born on " + dayOfTheWeek[d])
 } else if (gender === "male") {
-    alert("Your name is: " + maleNames[big] + "and you were born on " + dayOfTheWeek[big])
+    alert("Your name is: " + maleNames[d] + "and you were born on " + dayOfTheWeek[d])
 }
 
 }
