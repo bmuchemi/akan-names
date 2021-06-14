@@ -7,8 +7,8 @@ function akan() {
     var male = document.getElementById("male").value;
   var female = document.getElementById("female").value;
 
-    var malenames = ["Kwasi","Kwadwo","Kwadena","Kwaku","Yaw","Kofi","Kwame"]
-    var femalenames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+    var maleNames = ["Kwasi","Kwadwo","Kwadena","Kwaku","Yaw","Kofi","Kwame"]
+    var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
     var date = new Date(month+'/'+date+'/'+year);
     var akanDay = date.getDay()
     console.log(akanDay);
@@ -53,9 +53,9 @@ function akan() {
 
     
 if (gender === "female") {
-    alert("Your name is: " + femaleNames[born] + "and you were born on " + dayOfTheWeek[born])
+    alert("Your name is: " + femaleNames[born] + "and you were born on " + akanDay[born])
 } else if (gender === "male") {
-    alert("Your name is: " + maleNames[born] + "and you were born on " + dayOfTheWeek[born])
+    alert("Your name is: " + maleNames[born] + "and you were born on " + akanDay[born])
 }
 
     
