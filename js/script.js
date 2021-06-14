@@ -12,7 +12,7 @@ function akan() {
     var date = new Date(month+'/'+date+'/'+year);
     var akanDay = date.getDay()
     console.log(akanDay);
-    var gender = null;
+    
     
     if (akanDay == 0 ){
         day = "Sunday";
