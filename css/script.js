@@ -1,5 +1,5 @@
 
-function akan(){
+function calculate(){
 
     var year = patseint(document.getElementById("year")).value;
     var month = parseint(document.getElementById("month")).value;
@@ -8,6 +8,7 @@ function akan(){
     
     var date = new Date(year + "/" + month + "/" + day);
     var big = date.getDay(); 
+
     var femaleNames = [
         'Akosua',
         'Adwoa',
@@ -38,9 +39,9 @@ function akan(){
 ];
 
 
-if (gender === "Female") {
+if (gender === "female") {
     alert("Your name is: " + femaleNames[big] + "and you were born on " + dayOfTheWeek[big])
-} else if (gender === "Male") {
+} else if (gender === "male") {
     alert("Your name is: " + maleNames[big] + "and you were born on " + dayOfTheWeek[big])
 }
 
