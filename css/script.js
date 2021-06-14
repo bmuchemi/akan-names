@@ -28,21 +28,26 @@ var dayOfTheWeek = [
 ];
 
 
-function calculate(){
+function akan(){
 
-    var year = parseint(document.getElementById("year")).value;
-    var month = parseint(document.getElementById("month")).value;
-    var date = parseint(document.getElementById("date")).value;
+    var year = document.getElementById("year").value;
+    var month = document.getElementById("month").value;
+    var day = document.getElementById("date").value;
+    var gender = null;
+    if (document.getElementById("female").checked) {
+        gender = "Female"
+    } else if (document.getElementById("male").checked) {
+        gender = "Male"
     
     
-    var date = new Date(year + "/" + month + "/" + day);
-    var d = date.getDay(); 
+    var birth  = new Date(year + "/" + month + "/" + day);
+    var born = birth.getDay(); 
 
     
 if (gender === "female") {
-    alert("Your name is: " + femaleNames[d] + "and you were born on " + dayOfTheWeek[d])
+    alert("Your name is: " + femaleNames[born] + "and you were born on " + dayOfTheWeek[born])
 } else if (gender === "male") {
-    alert("Your name is: " + maleNames[d] + "and you were born on " + dayOfTheWeek[d])
+    alert("Your name is: " + maleNames[born] + "and you were born on " + dayOfTheWeek[born])
 }
 
 }
