@@ -6,9 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Akan Gen</title>
-	<link rel="stylesheet" href="css/css/bootstrap.css">
+	<link rel="stylesheet" href="css/CSS/bootstrap-5.0.1-dist/css/bootstrap.css">
+	<script src="../akan-names/css/CSS/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="css/script.js"></script>
+	
 </head>
 
 <body>
@@ -82,15 +83,15 @@ A Prince or Daakyehen(Fante)(lit Future-king) is any of the members of the linea
 						<li>
 							<label for="year ">Year of birth</label>
 						</li>
-						<input type="number" id="year" name="year" max=2020 min=1900 required placeholder="e.g: 1989">
+						<input type="text" id="year" required placeholder="e.g: 1989">
 						<li>
 							<label for="month ">Month</label>
 						</li>
-						<input type="number" id="month" name="month" max=12 min=1 required placeholder="e.g: March=3">
+						<input type="text" id="month" required placeholder="e.g: March=3">
 						<li>
 							<label for="date ">Date</label>
 						</li>
-						<input type="number" id="date" name="date" max=31 min=1 required placeholder="e.g: 10 ">
+						<input type="text" id="date" required placeholder="e.g: 10 ">
 						<li>
 							<p>Select your gender:
 								<br>
@@ -98,19 +99,19 @@ A Prince or Daakyehen(Fante)(lit Future-king) is any of the members of the linea
 						</li>
 						<div class="radio">
 							<label>
-								<input type="radio" name="gender" id="male" required>Male </label>
+								<input type="radio"  id="male" required >Male </label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="gender" id="female" required>Female </label>
+								<input type="radio"  id="female" required >Female </label>
 						</div>
 					</ul>
-					<input type="submit" id="submit" value="submit" onsubmit="akan();"> 
+					<input type="submit" id="submit" value="submit" onsubmit="akan(); return true"> 
                 </form>
 			</div>
 		</div>
 	</div>
-    
+    <script src="js/script.js"></script>
 </body>
 
 </html>
