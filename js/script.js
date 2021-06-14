@@ -64,7 +64,7 @@ var akan = function(
     alert("Please Enter a valid Month")
   }
   if(year<1950 || year>2022){
-      alert("Come on,no one is that old!!")
+      alert("Come on,no one is that old!!!")
   }
     if (gender === "Female") {
         return weekDay && femaleNames[weekDay.getDay()];
